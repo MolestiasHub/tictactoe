@@ -62,4 +62,6 @@ const congrats = (who) => {
     alert(who);
 }
 
+turn(1,2);
+
 console.log(field.map)
