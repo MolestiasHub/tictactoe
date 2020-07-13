@@ -12,7 +12,7 @@ const turn = (x,y) => {
             temp[y] = 0;
         }
     } else {
-        if(confirm ("Field is taken, try again?")){
+        if(!confirm ("Field is taken, try again?")){
             return;
         }
     }
@@ -62,7 +62,4 @@ const congrats = (who) => {
     alert(who);
 }
 
-turn(2,2);
-turn(2,1);
-turn(2,0);
 console.log(field.map)
