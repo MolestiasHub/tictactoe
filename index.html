@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="checker.js" defer></script>
+    <script src="newStart.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <div id="starter">
+        <button type="button" onclick="clean()">Try again</button>
+    </div>
+    <div id="field">
+        <div id="item00" class="items" onclick="turn(0,0)"></div>
+        <div id="item01" class="items" onclick="turn(0,1)"></div>
+        <div id="item02" class="items" onclick="turn(0,2)"></div>
+        <div id="item10" class="items" onclick="turn(1,0)"></div>
+        <div id="item11" class="items" onclick="turn(1,1)"></div>
+        <div id="item12" class="items" onclick="turn(1,2)"></div>
+        <div id="item20" class="items" onclick="turn(2,0)"></div>
+        <div id="item21" class="items" onclick="turn(2,1)"></div>
+        <div id="item22" class="items" onclick="turn(2,2)"></div>
+    </div>
 </body>
 </html>

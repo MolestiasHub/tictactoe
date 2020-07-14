@@ -1,0 +1,58 @@
+#field {
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+    background-color: whitesmoke;
+    
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    border: solid black 2px;
+    border-collapse: separate;
+    border-spacing: -2px;
+}
+
+#symbol{
+    position: relative;
+    font-size: 4em;
+    text-align: center;
+}
+
+#starter{
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    background-color: burlywood;
+    width: 400px;
+    height: 200px;
+    left: calc(50% - 200px);
+    top: calc(50% - 100px);
+    visibility: hidden;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#starter > button {
+    width: 20%;
+    height: 20%;
+}
+
+#starter > input {
+    width: 20%;
+    height: 20%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 98vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(74,73,73,1) 5%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(74,73,73,1) 95%, rgba(255,255,255,1) 100%);}
