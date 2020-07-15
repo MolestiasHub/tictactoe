@@ -38,14 +38,10 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
+    flex-direction: column;
 }
 
 #starter > button {
-    width: 20%;
-    height: 20%;
-}
-
-#starter > input {
     width: 20%;
     height: 20%;
 }

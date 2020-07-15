@@ -10,7 +10,7 @@ const turn = (x,y) => {
         if (field.turn){
             field.map[x][y] = 1;
         } else {
-            field.map[x][y] = 0;
+            field.map[x][y] = 2;
         }
         newSign(x,y,field.turn);
         field.turn = !field.turn;
@@ -18,6 +18,7 @@ const turn = (x,y) => {
         alert("field is taken, try again");
     }
     check(x,y)
+    console.log(field.map)
 }
 
 
