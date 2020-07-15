@@ -6,8 +6,7 @@ const check = (x,y) => {
         {
         newGame(field.turn);
     } else if (field.map.every(item => item.every(temp => {
-        console.log(item[temp])
-        return !!item[temp]}) && item.length === 3)){
+        return !!item[temp]}))){
         newGame("draw");
     }
 }

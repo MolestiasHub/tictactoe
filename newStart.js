@@ -24,8 +24,3 @@ const clean = () => {
     document.getElementById("field").setAttribute("style","visibility: visible");
     field = new FC();
 }
-
-const gege = () => {
-    window.open('','_parent',''); 
-    window.close();
-}

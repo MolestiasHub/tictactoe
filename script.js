@@ -1,5 +1,5 @@
 function FC() {
-    this.map = [[],[],[]],
+    this.map = [[undefined,undefined,undefined],[undefined,undefined,undefined],[undefined,undefined,undefined]],
     this.turn = true
 };
 
@@ -26,10 +26,13 @@ const newSign = (x, y, arg) => {
     let a = document.getElementById("item" + x + y);
     let b = document.createElement("h3");
     if (arg){
+        document.getElementById("player").innerHTML = "Player2's turn"
         b.innerHTML = "X"
     } else {
+        document.getElementById("player").innerHTML = "Player1's turn"
         b.innerHTML = "O"
     }
     b.setAttribute("id", "symbol");
     a.appendChild(b);
+    
 }
